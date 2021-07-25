@@ -1,0 +1,16 @@
+<div class="container">
+
+  <button type="button" (click)="setActive()" name="button" class="btn btn-primary my-3">
+    {{buttonText}}
+  </button>
+
+  <div class="card">
+    <div class="card-header">
+      Listado de cursos
+    </div>
+    <ul class="list-group" *ngIf="active">
+      <li class="list-group-item" *ngFor="let curso of courseList">{{curso}}</li>
+    </ul>
+  </div>
+
+</div>
